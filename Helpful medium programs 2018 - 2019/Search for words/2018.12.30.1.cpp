@@ -78,7 +78,7 @@ void FSWords()
 
 void Filling()
 {
-    //1 - Горизонтально 2 - Вертикально
+    //1 - Р“РѕСЂРёР·РѕРЅС‚Р°Р»СЊРЅРѕ 2 - Р’РµСЂС‚РёРєР°Р»СЊРЅРѕ
 
     Poz1 = rand() % 2 + 1;
     Poz2 = rand() % 2 + 1;
@@ -142,7 +142,7 @@ void Filling()
 
 
     int RandomAlpha;
-    char Alphabet[34] = {'а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я'};
+    char Alphabet[34] = {'Р°', 'Р±', 'РІ', 'Рі', 'Рґ', 'Рµ', 'С‘', 'Р¶', 'Р·', 'Рё', 'Р№', 'Рє', 'Р»', 'Рј', 'РЅ', 'Рѕ', 'Рї', 'СЂ', 'СЃ', 'С‚', 'Сѓ', 'С„', 'С…', 'С†', 'С‡', 'С€', 'С‰', 'СЉ', 'С‹', 'СЊ', 'СЌ', 'СЋ', 'СЏ'};
     char Alpha;
 
     for(int i=0; i<n; i++)
@@ -220,12 +220,12 @@ int main()
 
     while(!repeat)
     {
-        cout<<"Выберите сложность игры: "<<endl;
-        cout<<"1. Легко."<<endl;
-        cout<<"2. Нормально."<<endl;
-        cout<<"3. Сложно."<<endl;
-        cout<<"4. Эксперт."<<endl;
-        cout<<"Ваш выбор: ";
+        cout<<"Р’С‹Р±РµСЂРёС‚Рµ СЃР»РѕР¶РЅРѕСЃС‚СЊ РёРіСЂС‹: "<<endl;
+        cout<<"1. Р›РµРіРєРѕ."<<endl;
+        cout<<"2. РќРѕСЂРјР°Р»СЊРЅРѕ."<<endl;
+        cout<<"3. РЎР»РѕР¶РЅРѕ."<<endl;
+        cout<<"4. Р­РєСЃРїРµСЂС‚."<<endl;
+        cout<<"Р’Р°С€ РІС‹Р±РѕСЂ: ";
 
         bool Selection = false;
 
@@ -285,12 +285,12 @@ int main()
         bool second = false;
         bool Out;
 
-        cout<<endl<<"При окончании ввода слова, нажмите \"Enter\"."<<endl;
+        cout<<endl<<"РџСЂРё РѕРєРѕРЅС‡Р°РЅРёРё РІРІРѕРґР° СЃР»РѕРІР°, РЅР°Р¶РјРёС‚Рµ \"Enter\"."<<endl;
 
         //std::chrono::steady_clock::time_point _start(std::chrono::steady_clock::now());
         while(!End)
         {
-            cout<<"Введите слово: ";
+            cout<<"Р’РІРµРґРёС‚Рµ СЃР»РѕРІРѕ: ";
             cin>>Words;
 
             if(strcmp(Words,FirstWord)==0 or strcmp(Words,SecondWord)==0)
@@ -349,10 +349,10 @@ int main()
                     }
                     cout<<endl;
                 }
-                cout<<endl<<"При окончании ввода слова, нажмите \"Enter\"."<<endl;
+                cout<<endl<<"РџСЂРё РѕРєРѕРЅС‡Р°РЅРёРё РІРІРѕРґР° СЃР»РѕРІР°, РЅР°Р¶РјРёС‚Рµ \"Enter\"."<<endl;
 
             }
-            else if(strcmp(Words, "подсказка")==0)
+            else if(strcmp(Words, "РїРѕРґСЃРєР°Р·РєР°")==0)
             {
                 cout<<FirstWord<<endl;
                 cout<<SecondWord<<endl;
@@ -360,7 +360,7 @@ int main()
             else
             {
                 SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightRed));
-                cout<<"Такого слова здесь нет"<<endl;
+                cout<<"РўР°РєРѕРіРѕ СЃР»РѕРІР° Р·РґРµСЃСЊ РЅРµС‚"<<endl;
                 SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
             }
 
@@ -369,15 +369,15 @@ int main()
         }
         //std::chrono::steady_clock::time_point _end(std::chrono::steady_clock::now());
 
-        cout<<"Поздравляем, вы закончили искать слова!"<<endl;
-        cout<<"Продолжительность поиска слов: ";
+        cout<<"РџРѕР·РґСЂР°РІР»СЏРµРј, РІС‹ Р·Р°РєРѕРЅС‡РёР»Рё РёСЃРєР°С‚СЊ СЃР»РѕРІР°!"<<endl;
+        cout<<"РџСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ РїРѕРёСЃРєР° СЃР»РѕРІ: ";
         //cout << std::chrono::duration_cast<std::chrono::duration<double>>(
                  //_end - _start).count();
 
         cout<<endl<<endl;
-        cout<<"Выберите что делать дальше: "<<endl;
-        cout<<"1. Начать заново."<<endl;
-        cout<<"2. Выйти из программы."<<endl;
+        cout<<"Р’С‹Р±РµСЂРёС‚Рµ С‡С‚Рѕ РґРµР»Р°С‚СЊ РґР°Р»СЊС€Рµ: "<<endl;
+        cout<<"1. РќР°С‡Р°С‚СЊ Р·Р°РЅРѕРІРѕ."<<endl;
+        cout<<"2. Р’С‹Р№С‚Рё РёР· РїСЂРѕРіСЂР°РјРјС‹."<<endl;
 
         bool Selection2 = false;
 

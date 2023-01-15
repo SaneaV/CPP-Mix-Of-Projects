@@ -81,40 +81,40 @@ void Game ()
     int Array[100]={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100};
     bool Rules19 = false;
 
-    //—Ú‡‚Í‡ Ë Ò˜∏Ú
-    cout<<"—˜∏Ú: ";
+    //–°—Ç–∞–≤–∫–∞ –∏ —Å—á—ë—Ç
+    cout<<"–°—á—ë—Ç: ";
     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightGreen));
     cout<<Money<<"$"<<endl;
     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
 
-    cout<<"\n¬˚·ÂËÚÂ ˜ËÒÎÓ ÓÚ 1 ‰Ó 100."<<endl;
-    cout<<"¬‚Ó‰: ";
+    cout<<"\n–í—ã–±–µ—Ä–∏—Ç–µ —á–∏—Å–ª–æ –æ—Ç 1 –¥–æ 100."<<endl;
+    cout<<"–í–≤–æ–¥: ";
     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | Yellow));
 
     while (!(cin>>PlayerNumberSelect) or PlayerNumberSelect>100 or PlayerNumberSelect<1)
     {
         SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightRed));
-        cout<<"Œ¯Ë·Í‡, ‚˚ ‚‚ÂÎË ˜ÚÓ-ÚÓ ÌÂ ÚÓ. "<<endl;
+        cout<<"–û—à–∏–±–∫–∞, –≤—ã –≤–≤–µ–ª–∏ —á—Ç–æ-—Ç–æ –Ω–µ —Ç–æ. "<<endl;
         SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
         cin.clear();
         cin.sync();
-        cout<<"\nœÓ‚ÚÓËÚÂ ‚‚Ó‰: ";
+        cout<<"\n–ü–æ–≤—Ç–æ—Ä–∏—Ç–µ –≤–≤–æ–¥: ";
     }
     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
 
 
-    cout<<"\n—‰ÂÎ‡ÈÚÂ ÒÚ‡‚ÍÛ."<<endl;
-    cout<<"¬‚Ó‰: ";
+    cout<<"\n–°–¥–µ–ª–∞–π—Ç–µ —Å—Ç–∞–≤–∫—É."<<endl;
+    cout<<"–í–≤–æ–¥: ";
     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightGreen));
 
     while (!(cin>>Bet) or Bet>Money or Bet<1)
     {
         SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightRed));
-        cout<<"Œ¯Ë·Í‡, ‚˚ ‚‚ÂÎË ˜ÚÓ-ÚÓ ÌÂ ÚÓ. "<<endl;
+        cout<<"–û—à–∏–±–∫–∞, –≤—ã –≤–≤–µ–ª–∏ —á—Ç–æ-—Ç–æ –Ω–µ —Ç–æ. "<<endl;
         SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
         cin.clear();
         cin.sync();
-        cout<<"\nœÓ‚ÚÓËÚÂ ‚‚Ó‰: ";
+        cout<<"\n–ü–æ–≤—Ç–æ—Ä–∏—Ç–µ –≤–≤–æ–¥: ";
         SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightGreen));
     }
     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
@@ -128,9 +128,9 @@ void Game ()
     {
         while (PlayerSelect)
         {
-            cout<<"»„‡ ÌÓÏÂ: "<<Rules<<endl<<endl;
+            cout<<"–ò–≥—Ä–∞ –Ω–æ–º–µ—Ä: "<<Rules<<endl<<endl;
             One = Array100(Array);
-            cout<<"œÂ‚ÓÂ ˜ËÒÎÓ: ";
+            cout<<"–ü–µ—Ä–≤–æ–µ —á–∏—Å–ª–æ: ";
             if (PlayerNumberSelect==One)
             {
                 SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightRed));
@@ -143,7 +143,7 @@ void Game ()
             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
             Sleep(1000);
             Two = Array100(Array);
-            cout<<"¬ÚÓÓÂ ˜ËÒÎÓ: ";
+            cout<<"–í—Ç–æ—Ä–æ–µ —á–∏—Å–ª–æ: ";
             if (PlayerNumberSelect==Two)
             {
                 SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightRed));
@@ -156,7 +156,7 @@ void Game ()
             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
             Sleep(1000);
             Three = Array100(Array);
-            cout<<"“ÂÚ¸Â ˜ËÒÎÓ: ";
+            cout<<"–¢—Ä–µ—Ç—å–µ —á–∏—Å–ª–æ: ";
             if (PlayerNumberSelect==Three)
             {
                 SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightRed));
@@ -169,7 +169,7 @@ void Game ()
             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
             Sleep(1000);
             Four = Array100(Array);
-            cout<<"◊ÂÚ‚∏ÚÓÂ ˜ËÒÎÓ: ";
+            cout<<"–ß–µ—Ç–≤—ë—Ä—Ç–æ–µ —á–∏—Å–ª–æ: ";
             if (PlayerNumberSelect==Four)
             {
                 SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightRed));
@@ -182,7 +182,7 @@ void Game ()
             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
             Sleep(1000);
             Five = Array100(Array);
-            cout<<"œˇÚÓÂ ˜ËÒÎÓ: ";
+            cout<<"–ü—è—Ç–æ–µ —á–∏—Å–ª–æ: ";
             if (PlayerNumberSelect==Five)
             {
                 SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightRed));
@@ -203,12 +203,12 @@ void Game ()
             Rules19 = true;
             system("cls");
             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightGreen));
-            cout<<"œŒ«ƒ–¿¬Àﬂ≈Ã! ¬€ ¬€»√–¿À»!"<<endl<<endl;
-            cout<<"¬€ ¬€»√–¿À» 1000$ + ¬¿ÿ ¬€»√–€ÿ"<<endl;
+            cout<<"–ü–û–ó–î–†–ê–í–õ–Ø–ï–ú! –í–´ –í–´–ò–ì–†–ê–õ–ò!"<<endl<<endl;
+            cout<<"–í–´ –í–´–ò–ì–†–ê–õ–ò 1000$ + –í–ê–® –í–´–ò–ì–†–´–®"<<endl;
             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
             GameMoney += (Bet/100.0)*(14.0+Rules);
             Money += GameMoney + 1000;
-            cout<<endl<<"¬‡¯ Ó·˘ËÈ Ò˜∏Ú: ";
+            cout<<endl<<"–í–∞—à –æ–±—â–∏–π —Å—á—ë—Ç: ";
             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightGreen));
             cout<<Money<<endl;
             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
@@ -222,33 +222,33 @@ void Game ()
         if (Win)
         {
             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightGreen));
-            cout<<endl<<endl<<"¬‡¯Â ˜ËÒÎÓ ÌÂ ‚˚Ô‡ÎÓ!"<<endl<<endl;
+            cout<<endl<<endl<<"–í–∞—à–µ —á–∏—Å–ª–æ –Ω–µ –≤—ã–ø–∞–ª–æ!"<<endl<<endl;
             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
-            cout<<"¬˚ ‚˚Ë„‡ÎË: ";
+            cout<<"–í—ã –≤—ã–∏–≥—Ä–∞–ª–∏: ";
             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightGreen));
             cout<<(Bet/100.0)*(14.0+Rules)<<endl;
             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
             GameMoney += (Bet/100.0)*(14.0+Rules);
-            cout<<"¬‡¯ ‚˚Ë„˚¯: ";
+            cout<<"–í–∞—à –≤—ã–∏–≥—Ä—ã—à: ";
             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightGreen));
             cout<<GameMoney<<endl;
             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
 
-            cout<<endl<<endl<<"¬˚ ‚˚·Ë‡ÂÚÂ: ";
-            cout<<endl<<"1. œÓ‰ÓÎÊËÚ¸ Ë„Û. ";
-            cout<<endl<<"2. ”‚ÂÎË˜ËÚ¸ ÒÚ‡‚ÍÛ.";
-            cout<<endl<<"3. «‡·‡Ú¸ ‰ÂÌ¸„Ë Ë Á‡ÍÓÌ˜ËÚ¸ Ë„Û.";
-            cout<<endl<<"¬‡¯ ‚˚·Ó: ";
+            cout<<endl<<endl<<"–í—ã –≤—ã–±–∏—Ä–∞–µ—Ç–µ: ";
+            cout<<endl<<"1. –ü—Ä–æ–¥–æ–ª–∂–∏—Ç—å –∏–≥—Ä—É. ";
+            cout<<endl<<"2. –£–≤–µ–ª–∏—á–∏—Ç—å —Å—Ç–∞–≤–∫—É.";
+            cout<<endl<<"3. –ó–∞–±—Ä–∞—Ç—å –¥–µ–Ω—å–≥–∏ –∏ –∑–∞–∫–æ–Ω—á–∏—Ç—å –∏–≥—Ä—É.";
+            cout<<endl<<"–í–∞—à –≤—ã–±–æ—Ä: ";
             int Select;
 
             while (!(cin>>Select) or Select>3 or Select<1)
             {
                 SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightRed));
-                cout<<"Œ¯Ë·Í‡, ‚˚ ‚‚ÂÎË ˜ÚÓ-ÚÓ ÌÂ ÚÓ. "<<endl;
+                cout<<"–û—à–∏–±–∫–∞, –≤—ã –≤–≤–µ–ª–∏ —á—Ç–æ-—Ç–æ –Ω–µ —Ç–æ. "<<endl;
                 SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
                 cin.clear();
                 cin.sync();
-                cout<<"\nœÓ‚ÚÓËÚÂ ‚‚Ó‰: ";
+                cout<<"\n–ü–æ–≤—Ç–æ—Ä–∏—Ç–µ –≤–≤–æ–¥: ";
             }
 
             switch (Select)
@@ -261,18 +261,18 @@ void Game ()
             case 2:
             {
                 int FirstBet = Bet;
-                cout<<"\n—‰ÂÎ‡ÈÚÂ ÒÚ‡‚ÍÛ."<<endl;
-                cout<<"¬‚Ó‰: ";
+                cout<<"\n–°–¥–µ–ª–∞–π—Ç–µ —Å—Ç–∞–≤–∫—É."<<endl;
+                cout<<"–í–≤–æ–¥: ";
                 SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightGreen));
 
                 while (!(cin>>Bet) or Bet>Money or Bet<1 or FirstBet>Bet)
                 {
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightRed));
-                    cout<<"Œ¯Ë·Í‡, ‚˚ ‚‚ÂÎË ˜ÚÓ-ÚÓ ÌÂ ÚÓ. (¬‡¯‡ ÒÚ‡‚Í‡ ·ÓÎ¸¯Â Ì‡ÎË˜ÍË, ÏÂÌ¸¯Â 1 ‰ÓÎÎ‡‡ ËÎË ÏÂÌ¸¯Â ÔÂ‰˚‰Û˘ÂÈ ÒÚ‡‚ÍË) "<<endl;
+                    cout<<"–û—à–∏–±–∫–∞, –≤—ã –≤–≤–µ–ª–∏ —á—Ç–æ-—Ç–æ –Ω–µ —Ç–æ. (–í–∞—à–∞ —Å—Ç–∞–≤–∫–∞ –±–æ–ª—å—à–µ –Ω–∞–ª–∏—á–∫–∏, –º–µ–Ω—å—à–µ 1 –¥–æ–ª–ª–∞—Ä–∞ –∏–ª–∏ –º–µ–Ω—å—à–µ –ø—Ä–µ–¥—ã–¥—É—â–µ–π —Å—Ç–∞–≤–∫–∏) "<<endl;
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
                     cin.clear();
                     cin.sync();
-                    cout<<"\nœÓ‚ÚÓËÚÂ ‚‚Ó‰: ";
+                    cout<<"\n–ü–æ–≤—Ç–æ—Ä–∏—Ç–µ –≤–≤–æ–¥: ";
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightGreen));
                 }
                 SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
@@ -283,13 +283,13 @@ void Game ()
             case 3:
             {
                 system("cls");
-                cout<<"¬˚ Á‡ÍÓÌ˜ËÎË Ë„Û!"<<endl;
-                cout<<"¬‡¯ ‚˚Ë„˚¯: ";
+                cout<<"–í—ã –∑–∞–∫–æ–Ω—á–∏–ª–∏ –∏–≥—Ä—É!"<<endl;
+                cout<<"–í–∞—à –≤—ã–∏–≥—Ä—ã—à: ";
                 SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightGreen));
                 cout<<GameMoney<<endl;
                 SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
                 Money += GameMoney;
-                cout<<"¬‡¯ Ó·˘ËÈ Ò˜∏Ú: ";
+                cout<<"–í–∞—à –æ–±—â–∏–π —Å—á—ë—Ç: ";
                 SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightGreen));
                 cout<<Money<<endl;
                 SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
@@ -304,11 +304,11 @@ void Game ()
         else if (Win==0 and Rules19==0)
         {
             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightRed));
-            cout<<endl<<endl<<"  ÒÓÊ‡ÎÂÌË˛, ‚˚ ÔÓË„‡ÎË."<<endl<<endl;
+            cout<<endl<<endl<<"–ö —Å–æ–∂–∞–ª–µ–Ω–∏—é, –≤—ã –ø—Ä–æ–∏–≥—Ä–∞–ª–∏."<<endl<<endl;
 
             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
             Money -= Bet;
-            cout<<"¬‡¯ Ò˜∏Ú: ";
+            cout<<"–í–∞—à —Å—á—ë—Ç: ";
             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightGreen));
             cout<<Money<<endl;
             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));

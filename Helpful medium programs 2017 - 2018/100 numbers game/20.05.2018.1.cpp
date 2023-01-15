@@ -19,7 +19,7 @@ int main()
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 
     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
-    cout<<"Ââåäèòå âàøå èìÿ: ";
+    cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ð°ÑˆÐµ Ð¸Ð¼Ñ: ";
     float Money=100.0;
     char PlayerName[50];
     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | Yellow));
@@ -31,14 +31,14 @@ int main()
     while (MainMenu)
     {
         SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | Yellow));
-        cout<<setw(40)<<"Äîáðî ïîæàëîâàòü, "<<PlayerName<<"!"<<endl;
+        cout<<setw(40)<<"Ð”Ð¾Ð±Ñ€Ð¾ Ð¿Ð¾Ð¶Ð°Ð»Ð¾Ð²Ð°Ñ‚ÑŒ, "<<PlayerName<<"!"<<endl;
         SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
 
-        cout<<"1. Íà÷àòü èãðó."<<endl;
-        cout<<"2. Ïðàâèëà èãðû."<<endl;
-        cout<<"3. Î ïðîãðàììå."<<endl;
-        cout<<"4. Î ðàçðàáîò÷èêå."<<endl;
-        cout<<endl<<"Âàø âûáîð: ";
+        cout<<"1. ÐÐ°Ñ‡Ð°Ñ‚ÑŒ Ð¸Ð³Ñ€Ñƒ."<<endl;
+        cout<<"2. ÐŸÑ€Ð°Ð²Ð¸Ð»Ð° Ð¸Ð³Ñ€Ñ‹."<<endl;
+        cout<<"3. Ðž Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ðµ."<<endl;
+        cout<<"4. Ðž Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚Ñ‡Ð¸ÐºÐµ."<<endl;
+        cout<<endl<<"Ð’Ð°Ñˆ Ð²Ñ‹Ð±Ð¾Ñ€: ";
         SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightGreen));
         int Select;
 
@@ -46,11 +46,11 @@ int main()
         while (!(cin>>Select) or Select>4 or Select<1)
         {
             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightRed));
-            cout<<"Îøèáêà, âû ââåëè ÷òî-òî íå òî. "<<endl;
+            cout<<"ÐžÑˆÐ¸Ð±ÐºÐ°, Ð²Ñ‹ Ð²Ð²ÐµÐ»Ð¸ Ñ‡Ñ‚Ð¾-Ñ‚Ð¾ Ð½Ðµ Ñ‚Ð¾. "<<endl;
             SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
             cin.clear();
             cin.sync();
-            cout<<"\nÏîâòîðèòå ââîä: ";
+            cout<<"\nÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚Ðµ Ð²Ð²Ð¾Ð´: ";
         }
         SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
 
@@ -67,20 +67,20 @@ int main()
                 Game();
 
                 system("cls");
-                cout<<"1. Ïðîäîëæèòü èãðó."<<endl;
-                cout<<"2. Âûéòè â ìåíþ."<<endl;
-                cout<<"3. Âûéòè èç ïðîãðàììû."<<endl;
-                cout<<endl<<"Âàø âûáîð: ";
+                cout<<"1. ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ Ð¸Ð³Ñ€Ñƒ."<<endl;
+                cout<<"2. Ð’Ñ‹Ð¹Ñ‚Ð¸ Ð² Ð¼ÐµÐ½ÑŽ."<<endl;
+                cout<<"3. Ð’Ñ‹Ð¹Ñ‚Ð¸ Ð¸Ð· Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñ‹."<<endl;
+                cout<<endl<<"Ð’Ð°Ñˆ Ð²Ñ‹Ð±Ð¾Ñ€: ";
                 int Answer;
 
                 while (!(cin>>Answer) or Answer>3 or Answer<1)
                 {
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightRed));
-                    cout<<"Îøèáêà, âû ââåëè ÷òî-òî íå òî. "<<endl;
+                    cout<<"ÐžÑˆÐ¸Ð±ÐºÐ°, Ð²Ñ‹ Ð²Ð²ÐµÐ»Ð¸ Ñ‡Ñ‚Ð¾-Ñ‚Ð¾ Ð½Ðµ Ñ‚Ð¾. "<<endl;
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
                     cin.clear();
                     cin.sync();
-                    cout<<"\nÏîâòîðèòå ââîä: ";
+                    cout<<"\nÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚Ðµ Ð²Ð²Ð¾Ð´: ";
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightGreen));
                 }
 
@@ -111,26 +111,26 @@ int main()
             case 2:
             {
                 system("cls");
-                cout<<"Ïðàâèëà èãðû î÷åíü ïðîñòû: "<<endl<<endl;
-                cout<<"1. Âûáèðàåì ëþáîå ÷èñëî îò 1 äî 100"<<endl;
-                cout<<"2. Äåëàåì ñòàâêó"<<endl;
-                cout<<"3. Áîò âûáèðàåò ðàíäîìíîå ÷èñëî"<<endl;
-                cout<<"4. Åñëè ÷èñëî íå âûïàëî - ïîëó÷àåì 15% îò ñòàâêè, èíà÷å ñòàâêà íå ïðîøëà"<<endl;
+                cout<<"ÐŸÑ€Ð°Ð²Ð¸Ð»Ð° Ð¸Ð³Ñ€Ñ‹ Ð¾Ñ‡ÐµÐ½ÑŒ Ð¿Ñ€Ð¾ÑÑ‚Ñ‹: "<<endl<<endl;
+                cout<<"1. Ð’Ñ‹Ð±Ð¸Ñ€Ð°ÐµÐ¼ Ð»ÑŽÐ±Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð¾Ñ‚ 1 Ð´Ð¾ 100"<<endl;
+                cout<<"2. Ð”ÐµÐ»Ð°ÐµÐ¼ ÑÑ‚Ð°Ð²ÐºÑƒ"<<endl;
+                cout<<"3. Ð‘Ð¾Ñ‚ Ð²Ñ‹Ð±Ð¸Ñ€Ð°ÐµÑ‚ Ñ€Ð°Ð½Ð´Ð¾Ð¼Ð½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾"<<endl;
+                cout<<"4. Ð•ÑÐ»Ð¸ Ñ‡Ð¸ÑÐ»Ð¾ Ð½Ðµ Ð²Ñ‹Ð¿Ð°Ð»Ð¾ - Ð¿Ð¾Ð»ÑƒÑ‡Ð°ÐµÐ¼ 15% Ð¾Ñ‚ ÑÑ‚Ð°Ð²ÐºÐ¸, Ð¸Ð½Ð°Ñ‡Ðµ ÑÑ‚Ð°Ð²ÐºÐ° Ð½Ðµ Ð¿Ñ€Ð¾ÑˆÐ»Ð°"<<endl;
                 cout<<endl<<endl;
 
-                cout<<"1. Âûéòè â ìåíþ."<<endl;
-                cout<<"2. Âûéòè èç ïðîãðàììû."<<endl;
-                cout<<endl<<"Âàø âûáîð: ";
+                cout<<"1. Ð’Ñ‹Ð¹Ñ‚Ð¸ Ð² Ð¼ÐµÐ½ÑŽ."<<endl;
+                cout<<"2. Ð’Ñ‹Ð¹Ñ‚Ð¸ Ð¸Ð· Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñ‹."<<endl;
+                cout<<endl<<"Ð’Ð°Ñˆ Ð²Ñ‹Ð±Ð¾Ñ€: ";
                 int Answer;
 
                 while (!(cin>>Answer) or Answer>2 or Answer<1)
                 {
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightRed));
-                    cout<<"Îøèáêà, âû ââåëè ÷òî-òî íå òî. "<<endl;
+                    cout<<"ÐžÑˆÐ¸Ð±ÐºÐ°, Ð²Ñ‹ Ð²Ð²ÐµÐ»Ð¸ Ñ‡Ñ‚Ð¾-Ñ‚Ð¾ Ð½Ðµ Ñ‚Ð¾. "<<endl;
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
                     cin.clear();
                     cin.sync();
-                    cout<<"\nÏîâòîðèòå ââîä: ";
+                    cout<<"\nÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚Ðµ Ð²Ð²Ð¾Ð´: ";
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightGreen));
                 }
 
@@ -158,23 +158,23 @@ int main()
             case 3:
             {
                 system("cls");
-                cout<<"Äàòà íà÷àëà íàïèñàíèÿ ïðîãðàììû: 20.05.2018"<<endl;
-                cout<<"Ïîñëåäíåå îáíîâëåíèå ïðîãðàììû: 30.05.2018"<<endl;
-                cout<<"Îáíîâëåíèå îæèäàåòñÿ: --- "<<endl<<endl<<endl;
+                cout<<"Ð”Ð°Ñ‚Ð° Ð½Ð°Ñ‡Ð°Ð»Ð° Ð½Ð°Ð¿Ð¸ÑÐ°Ð½Ð¸Ñ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñ‹: 20.05.2018"<<endl;
+                cout<<"ÐŸÐ¾ÑÐ»ÐµÐ´Ð½ÐµÐµ Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ðµ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñ‹: 30.05.2018"<<endl;
+                cout<<"ÐžÐ±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ðµ Ð¾Ð¶Ð¸Ð´Ð°ÐµÑ‚ÑÑ: --- "<<endl<<endl<<endl;
 
-                cout<<"1. Âûéòè â ìåíþ."<<endl;
-                cout<<"2. Âûéòè èç ïðîãðàììû."<<endl;
-                cout<<endl<<"Âàø âûáîð: ";
+                cout<<"1. Ð’Ñ‹Ð¹Ñ‚Ð¸ Ð² Ð¼ÐµÐ½ÑŽ."<<endl;
+                cout<<"2. Ð’Ñ‹Ð¹Ñ‚Ð¸ Ð¸Ð· Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñ‹."<<endl;
+                cout<<endl<<"Ð’Ð°Ñˆ Ð²Ñ‹Ð±Ð¾Ñ€: ";
                 int Answer;
 
                 while (!(cin>>Answer) or Answer>2 or Answer<1)
                 {
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightRed));
-                    cout<<"Îøèáêà, âû ââåëè ÷òî-òî íå òî. "<<endl;
+                    cout<<"ÐžÑˆÐ¸Ð±ÐºÐ°, Ð²Ñ‹ Ð²Ð²ÐµÐ»Ð¸ Ñ‡Ñ‚Ð¾-Ñ‚Ð¾ Ð½Ðµ Ñ‚Ð¾. "<<endl;
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
                     cin.clear();
                     cin.sync();
-                    cout<<"\nÏîâòîðèòå ââîä: ";
+                    cout<<"\nÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚Ðµ Ð²Ð²Ð¾Ð´: ";
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightGreen));
                 }
 
@@ -199,23 +199,23 @@ int main()
             case 4:
             {
                 system("cls");
-                cout<<"Ãëàâíûé ðàçðàáîò÷èê: Âè÷åâ Àëåêñàíäð"<<endl;
-                cout<<"Ñâÿçàòüñÿ: SaneaVicev@mail.ru"<<endl;
-                cout<<"Êîììåíòàðèé: Èäåÿ î ñîçäàíèè äàííîé èãðû ïðèøëà âíåçàïíî. Òàêæå âíåçàïíî è ïðîïàëà."<<endl<<endl<<endl;
+                cout<<"Ð“Ð»Ð°Ð²Ð½Ñ‹Ð¹ Ñ€Ð°Ð·Ñ€Ð°Ð±Ð¾Ñ‚Ñ‡Ð¸Ðº: Ð’Ð¸Ñ‡ÐµÐ² ÐÐ»ÐµÐºÑÐ°Ð½Ð´Ñ€"<<endl;
+                cout<<"Ð¡Ð²ÑÐ·Ð°Ñ‚ÑŒÑÑ: SaneaVicev@mail.ru"<<endl;
+                cout<<"ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¹: Ð˜Ð´ÐµÑ Ð¾ ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ð¸ Ð´Ð°Ð½Ð½Ð¾Ð¹ Ð¸Ð³Ñ€Ñ‹ Ð¿Ñ€Ð¸ÑˆÐ»Ð° Ð²Ð½ÐµÐ·Ð°Ð¿Ð½Ð¾. Ð¢Ð°ÐºÐ¶Ðµ Ð²Ð½ÐµÐ·Ð°Ð¿Ð½Ð¾ Ð¸ Ð¿Ñ€Ð¾Ð¿Ð°Ð»Ð°."<<endl<<endl<<endl;
 
-                cout<<"1. Âûéòè â ìåíþ."<<endl;
-                cout<<"2. Âûéòè èç ïðîãðàììû."<<endl;
-                cout<<endl<<"Âàø âûáîð: ";
+                cout<<"1. Ð’Ñ‹Ð¹Ñ‚Ð¸ Ð² Ð¼ÐµÐ½ÑŽ."<<endl;
+                cout<<"2. Ð’Ñ‹Ð¹Ñ‚Ð¸ Ð¸Ð· Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñ‹."<<endl;
+                cout<<endl<<"Ð’Ð°Ñˆ Ð²Ñ‹Ð±Ð¾Ñ€: ";
                 int Answer;
 
                 while (!(cin>>Answer) or Answer>2 or Answer<1)
                 {
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightRed));
-                    cout<<"Îøèáêà, âû ââåëè ÷òî-òî íå òî. "<<endl;
+                    cout<<"ÐžÑˆÐ¸Ð±ÐºÐ°, Ð²Ñ‹ Ð²Ð²ÐµÐ»Ð¸ Ñ‡Ñ‚Ð¾-Ñ‚Ð¾ Ð½Ðµ Ñ‚Ð¾. "<<endl;
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
                     cin.clear();
                     cin.sync();
-                    cout<<"\nÏîâòîðèòå ââîä: ";
+                    cout<<"\nÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚Ðµ Ð²Ð²Ð¾Ð´: ";
                     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightGreen));
                 }
 
@@ -243,6 +243,6 @@ int main()
 
     system("cls");
     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightGreen));
-    cout<<"Ïðîãðàììà óñïåøíî çàêîí÷èëà ðàáîòó!"<<endl;
+    cout<<"ÐŸÑ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ð° ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð·Ð°ÐºÐ¾Ð½Ñ‡Ð¸Ð»Ð° Ñ€Ð°Ð±Ð¾Ñ‚Ñƒ!"<<endl;
     SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
 }

@@ -159,21 +159,21 @@ int main()
 
         cout<<endl<<endl;
         SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | LightBlue));
-        cout<<"Âû çàêîí÷èëè ââîä òåêñòà!"<<endl<<endl;
+        cout<<"Ğ’Ñ‹ Ğ·Ğ°ĞºĞ¾Ğ½Ñ‡Ğ¸Ğ»Ğ¸ Ğ²Ğ²Ğ¾Ğ´ Ñ‚ĞµĞºÑÑ‚Ğ°!"<<endl<<endl;
         SetConsoleTextAttribute(hConsole, (WORD) ((Black << 4) | White));
 
-        cout<<"Äëèíà òåêñòà: "<<strlen(Example)<<endl;
-        cout<<"Ïğîäîëæèòåëüíîñòü ââîäà òåêñòà: ";
+        cout<<"Ğ”Ğ»Ğ¸Ğ½Ğ° Ñ‚ĞµĞºÑÑ‚Ğ°: "<<strlen(Example)<<endl;
+        cout<<"ĞŸÑ€Ğ¾Ğ´Ğ¾Ğ»Ğ¶Ğ¸Ñ‚ĞµĞ»ÑŒĞ½Ğ¾ÑÑ‚ÑŒ Ğ²Ğ²Ğ¾Ğ´Ğ° Ñ‚ĞµĞºÑÑ‚Ğ°: ";
         //cout << std::chrono::duration_cast<std::chrono::duration<double>>(
                  //_end - _start).count();
         cout<<endl;
-        cout<<"Êîëè÷åñòâî äîïóùåííûõ îøèáîê: "<<Mistake<<endl;
-        cout<<"Êîëè÷åñòâî íàæàòèé BACKSPACE: "<<BackSpace<<endl;
+        cout<<"ĞšĞ¾Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ¾ Ğ´Ğ¾Ğ¿ÑƒÑ‰ĞµĞ½Ğ½Ñ‹Ñ… Ğ¾ÑˆĞ¸Ğ±Ğ¾Ğº: "<<Mistake<<endl;
+        cout<<"ĞšĞ¾Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ¾ Ğ½Ğ°Ğ¶Ğ°Ñ‚Ğ¸Ğ¹ BACKSPACE: "<<BackSpace<<endl;
 
         cout<<endl<<endl;
-        cout<<"Âûáåğèòå ÷òî äåëàòü äàëüøå: "<<endl;
-        cout<<"1. Íà÷àòü çàíîâî."<<endl;
-        cout<<"2. Âûéòè èç ïğîãğàììû."<<endl;
+        cout<<"Ğ’Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ñ‡Ñ‚Ğ¾ Ğ´ĞµĞ»Ğ°Ñ‚ÑŒ Ğ´Ğ°Ğ»ÑŒÑˆĞµ: "<<endl;
+        cout<<"1. ĞĞ°Ñ‡Ğ°Ñ‚ÑŒ Ğ·Ğ°Ğ½Ğ¾Ğ²Ğ¾."<<endl;
+        cout<<"2. Ğ’Ñ‹Ğ¹Ñ‚Ğ¸ Ğ¸Ğ· Ğ¿Ñ€Ğ¾Ğ³Ñ€Ğ°Ğ¼Ğ¼Ñ‹."<<endl;
 
         bool Selection = false;
 
@@ -205,6 +205,6 @@ int main()
     }
 
     system("cls");
-    cout<<"Ïğîãğàììà çàêîí÷èëà ñâîş ğàáîòó."<<endl;
+    cout<<"ĞŸÑ€Ğ¾Ğ³Ñ€Ğ°Ğ¼Ğ¼Ğ° Ğ·Ğ°ĞºĞ¾Ğ½Ñ‡Ğ¸Ğ»Ğ° ÑĞ²Ğ¾Ñ Ñ€Ğ°Ğ±Ğ¾Ñ‚Ñƒ."<<endl;
 
 }

@@ -70,9 +70,9 @@ void PlayervsPlayer()
         }
 
         if(k==0)
-            cout<<endl<<endl<<"Õîä ïåðâîãî èãðîêà(x). "<<endl;
+            cout<<endl<<endl<<"Ð¥Ð¾Ð´ Ð¿ÐµÑ€Ð²Ð¾Ð³Ð¾ Ð¸Ð³Ñ€Ð¾ÐºÐ°(x). "<<endl;
         else
-            cout<<endl<<endl<<"Õîä âòîðîãî èãðîêà(o). "<<endl;
+            cout<<endl<<endl<<"Ð¥Ð¾Ð´ Ð²Ñ‚Ð¾Ñ€Ð¾Ð³Ð¾ Ð¸Ð³Ñ€Ð¾ÐºÐ°(o). "<<endl;
 
         while(!DoStep)
         {
@@ -97,7 +97,7 @@ void PlayervsPlayer()
                         k++;
                     }
                     else
-                        cout<<"ß÷åéêà çàíÿòà"<<endl;
+                        cout<<"Ð¯Ñ‡ÐµÐ¹ÐºÐ° Ð·Ð°Ð½ÑÑ‚Ð°"<<endl;
                     break;
                 }
                 case '8':
@@ -117,7 +117,7 @@ void PlayervsPlayer()
                         k++;
                     }
                     else
-                        cout<<"ß÷åéêà çàíÿòà"<<endl;
+                        cout<<"Ð¯Ñ‡ÐµÐ¹ÐºÐ° Ð·Ð°Ð½ÑÑ‚Ð°"<<endl;
                     break;
                 }
                 case '9':
@@ -137,7 +137,7 @@ void PlayervsPlayer()
                         k++;
                     }
                     else
-                        cout<<"ß÷åéêà çàíÿòà"<<endl;
+                        cout<<"Ð¯Ñ‡ÐµÐ¹ÐºÐ° Ð·Ð°Ð½ÑÑ‚Ð°"<<endl;
                     break;
                 }
                 case '4':
@@ -157,7 +157,7 @@ void PlayervsPlayer()
                         k++;
                     }
                     else
-                        cout<<"ß÷åéêà çàíÿòà"<<endl;
+                        cout<<"Ð¯Ñ‡ÐµÐ¹ÐºÐ° Ð·Ð°Ð½ÑÑ‚Ð°"<<endl;
                     break;
                 }
                 case '5':
@@ -177,7 +177,7 @@ void PlayervsPlayer()
                         k++;
                     }
                     else
-                        cout<<"ß÷åéêà çàíÿòà"<<endl;
+                        cout<<"Ð¯Ñ‡ÐµÐ¹ÐºÐ° Ð·Ð°Ð½ÑÑ‚Ð°"<<endl;
                     break;
                 }
                 case '6':
@@ -197,7 +197,7 @@ void PlayervsPlayer()
                         k++;
                     }
                     else
-                        cout<<"ß÷åéêà çàíÿòà"<<endl;
+                        cout<<"Ð¯Ñ‡ÐµÐ¹ÐºÐ° Ð·Ð°Ð½ÑÑ‚Ð°"<<endl;
                     break;
                 }
                 case '1':
@@ -217,7 +217,7 @@ void PlayervsPlayer()
                         k++;
                     }
                     else
-                        cout<<"ß÷åéêà çàíÿòà"<<endl;
+                        cout<<"Ð¯Ñ‡ÐµÐ¹ÐºÐ° Ð·Ð°Ð½ÑÑ‚Ð°"<<endl;
                     break;
                 }
                 case '2':
@@ -237,7 +237,7 @@ void PlayervsPlayer()
                         k++;
                     }
                     else
-                        cout<<"ß÷åéêà çàíÿòà"<<endl;
+                        cout<<"Ð¯Ñ‡ÐµÐ¹ÐºÐ° Ð·Ð°Ð½ÑÑ‚Ð°"<<endl;
                     break;
                 }
                 case '3':
@@ -257,12 +257,12 @@ void PlayervsPlayer()
                         k++;
                     }
                     else
-                        cout<<"ß÷åéêà çàíÿòà"<<endl;
+                        cout<<"Ð¯Ñ‡ÐµÐ¹ÐºÐ° Ð·Ð°Ð½ÑÑ‚Ð°"<<endl;
                     break;
                 }
 
                 default:
-                    cout<<"Âû îøèáëèñü êëàâèøåé"<<endl;
+                    cout<<"Ð’Ñ‹ Ð¾ÑˆÐ¸Ð±Ð»Ð¸ÑÑŒ ÐºÐ»Ð°Ð²Ð¸ÑˆÐµÐ¹"<<endl;
                 }
             }
         }
@@ -307,9 +307,9 @@ void PlayervsPlayer()
         if(Win or Full==9)
         {
             if(Win)
-                cout<<"Èãðîê \""<<Figure<<"\" âûèãðàë!"<<endl;
+                cout<<"Ð˜Ð³Ñ€Ð¾Ðº \""<<Figure<<"\" Ð²Ñ‹Ð¸Ð³Ñ€Ð°Ð»!"<<endl;
             else
-                cout<<"Íè÷üÿ"<<endl;
+                cout<<"ÐÐ¸Ñ‡ÑŒÑ"<<endl;
 
             for(int i=0; i<3; i++)
             {
@@ -373,7 +373,7 @@ void PlayervsBot()
                     cout<<endl<<"-----"<<endl;
             }
 
-            cout<<endl<<endl<<"Âàø õîä!"<<endl;
+            cout<<endl<<endl<<"Ð’Ð°Ñˆ Ñ…Ð¾Ð´!"<<endl;
 
             if((Figure=='x' and k==0) or (k==1 and Figure=='o'))
                 while(!DoStep)
@@ -392,7 +392,7 @@ void PlayervsBot()
                                 k++;
                             }
                             else
-                                cout<<"ß÷åéêà çàíÿòà"<<endl;
+                                cout<<"Ð¯Ñ‡ÐµÐ¹ÐºÐ° Ð·Ð°Ð½ÑÑ‚Ð°"<<endl;
                             break;
                         }
                         case '8':
@@ -405,7 +405,7 @@ void PlayervsBot()
                                 k++;
                             }
                             else
-                                cout<<"ß÷åéêà çàíÿòà"<<endl;
+                                cout<<"Ð¯Ñ‡ÐµÐ¹ÐºÐ° Ð·Ð°Ð½ÑÑ‚Ð°"<<endl;
                             break;
                         }
                         case '9':
@@ -418,7 +418,7 @@ void PlayervsBot()
                                 k++;
                             }
                             else
-                                cout<<"ß÷åéêà çàíÿòà"<<endl;
+                                cout<<"Ð¯Ñ‡ÐµÐ¹ÐºÐ° Ð·Ð°Ð½ÑÑ‚Ð°"<<endl;
                             break;
                         }
                         case '4':
@@ -431,7 +431,7 @@ void PlayervsBot()
                                 k++;
                             }
                             else
-                                cout<<"ß÷åéêà çàíÿòà"<<endl;
+                                cout<<"Ð¯Ñ‡ÐµÐ¹ÐºÐ° Ð·Ð°Ð½ÑÑ‚Ð°"<<endl;
                             break;
                         }
                         case '5':
@@ -444,7 +444,7 @@ void PlayervsBot()
                                 k++;
                             }
                             else
-                                cout<<"ß÷åéêà çàíÿòà"<<endl;
+                                cout<<"Ð¯Ñ‡ÐµÐ¹ÐºÐ° Ð·Ð°Ð½ÑÑ‚Ð°"<<endl;
                             break;
                         }
                         case '6':
@@ -457,7 +457,7 @@ void PlayervsBot()
                                 k++;
                             }
                             else
-                                cout<<"ß÷åéêà çàíÿòà"<<endl;
+                                cout<<"Ð¯Ñ‡ÐµÐ¹ÐºÐ° Ð·Ð°Ð½ÑÑ‚Ð°"<<endl;
                             break;
                         }
                         case '1':
@@ -470,7 +470,7 @@ void PlayervsBot()
                                 k++;
                             }
                             else
-                                cout<<"ß÷åéêà çàíÿòà"<<endl;
+                                cout<<"Ð¯Ñ‡ÐµÐ¹ÐºÐ° Ð·Ð°Ð½ÑÑ‚Ð°"<<endl;
                             break;
                         }
                         case '2':
@@ -483,7 +483,7 @@ void PlayervsBot()
                                 k++;
                             }
                             else
-                                cout<<"ß÷åéêà çàíÿòà"<<endl;
+                                cout<<"Ð¯Ñ‡ÐµÐ¹ÐºÐ° Ð·Ð°Ð½ÑÑ‚Ð°"<<endl;
                             break;
                         }
                         case '3':
@@ -496,12 +496,12 @@ void PlayervsBot()
                                 k++;
                             }
                             else
-                                cout<<"ß÷åéêà çàíÿòà"<<endl;
+                                cout<<"Ð¯Ñ‡ÐµÐ¹ÐºÐ° Ð·Ð°Ð½ÑÑ‚Ð°"<<endl;
                             break;
                         }
 
                         default:
-                            cout<<"Âû îøèáëèñü êëàâèøåé"<<endl;
+                            cout<<"Ð’Ñ‹ Ð¾ÑˆÐ¸Ð±Ð»Ð¸ÑÑŒ ÐºÐ»Ð°Ð²Ð¸ÑˆÐµÐ¹"<<endl;
                         }
                     }
                 }
@@ -1047,9 +1047,9 @@ void PlayervsBot()
             if(Win or Full==9)
             {
                 if(Win)
-                    cout<<"Èãðîê \""<<FigureW<<"\" âûèãðàë!"<<endl;
+                    cout<<"Ð˜Ð³Ñ€Ð¾Ðº \""<<FigureW<<"\" Ð²Ñ‹Ð¸Ð³Ñ€Ð°Ð»!"<<endl;
                 else
-                    cout<<"Íè÷üÿ"<<endl;
+                    cout<<"ÐÐ¸Ñ‡ÑŒÑ"<<endl;
 
                 for(int i=0; i<3; i++)
                 {
@@ -1106,10 +1106,10 @@ int main()
     while(!Repeat)
     {
         Selection = false;
-        cout<<"Âûáåðèòå ðåæèì èãðû: "<<endl;
-        cout<<"1. Èãðîê ïðîòèâ èãðîêà."<<endl;
-        cout<<"2. Èãðîê ïðîòèâ êîìïüþòåðà."<<endl;
-        cout<<"Âàø âûáîð: ";
+        cout<<"Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ñ€ÐµÐ¶Ð¸Ð¼ Ð¸Ð³Ñ€Ñ‹: "<<endl;
+        cout<<"1. Ð˜Ð³Ñ€Ð¾Ðº Ð¿Ñ€Ð¾Ñ‚Ð¸Ð² Ð¸Ð³Ñ€Ð¾ÐºÐ°."<<endl;
+        cout<<"2. Ð˜Ð³Ñ€Ð¾Ðº Ð¿Ñ€Ð¾Ñ‚Ð¸Ð² ÐºÐ¾Ð¼Ð¿ÑŒÑŽÑ‚ÐµÑ€Ð°."<<endl;
+        cout<<"Ð’Ð°Ñˆ Ð²Ñ‹Ð±Ð¾Ñ€: ";
 
         while(!Selection)
         {
@@ -1120,7 +1120,7 @@ int main()
             if(Select=='1' or Select=='2')
                 Selection=true;
             else
-                cout<<endl<<"Ñäåëàéòå âûáîð îò 1 äî 2";
+                cout<<endl<<"Ð¡Ð´ÐµÐ»Ð°Ð¹Ñ‚Ðµ Ð²Ñ‹Ð±Ð¾Ñ€ Ð¾Ñ‚ 1 Ð´Ð¾ 2";
         }
 
         Filling();
@@ -1133,13 +1133,13 @@ int main()
             system("cls");
             if(x==1)
             {
-                cout<<"Âàøà ôèãóðà \"x\""<<endl<<endl;
+                cout<<"Ð’Ð°ÑˆÐ° Ñ„Ð¸Ð³ÑƒÑ€Ð° \"x\""<<endl<<endl;
                 Figure='x';
                 BFigure='o';
             }
             else
             {
-                cout<<"Âàøà ôèãóðà \"o\""<<endl<<endl;
+                cout<<"Ð’Ð°ÑˆÐ° Ñ„Ð¸Ð³ÑƒÑ€Ð° \"o\""<<endl<<endl;
                 Figure='o';
                 BFigure='x';
             }
@@ -1167,9 +1167,9 @@ int main()
         }
 
 
-        cout<<endl<<endl<<"Âûáåðèòå ÷òî äåëàòü äàëüøå: "<<endl;
-        cout<<"1. Íà÷àòü íîâóþ èãðó."<<endl;
-        cout<<"2. Âûéòè èç èãðû."<<endl;
+        cout<<endl<<endl<<"Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ñ‡Ñ‚Ð¾ Ð´ÐµÐ»Ð°Ñ‚ÑŒ Ð´Ð°Ð»ÑŒÑˆÐµ: "<<endl;
+        cout<<"1. ÐÐ°Ñ‡Ð°Ñ‚ÑŒ Ð½Ð¾Ð²ÑƒÑŽ Ð¸Ð³Ñ€Ñƒ."<<endl;
+        cout<<"2. Ð’Ñ‹Ð¹Ñ‚Ð¸ Ð¸Ð· Ð¸Ð³Ñ€Ñ‹."<<endl;
 
         while(!Selection2)
         {
@@ -1195,6 +1195,6 @@ int main()
             }
         }
     }
-    cout<<"Ïðîãðàììà çàêîí÷èëà ðàáîòó"<<endl;
+    cout<<"ÐŸÑ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ð° Ð·Ð°ÐºÐ¾Ð½Ñ‡Ð¸Ð»Ð° Ñ€Ð°Ð±Ð¾Ñ‚Ñƒ"<<endl;
 
 }
